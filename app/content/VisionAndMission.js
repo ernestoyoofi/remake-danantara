@@ -30,7 +30,8 @@ export default function VisionAndMission() {
         </div>
         <div className="w-full h-[calc(100vh-170px)] min-h-[490px] max-h-[950px]">
           <div className="absolute w-[calc(100%-calc(16px*0))] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] from-transparent to-white bg-gradient-to-tl z-20 flex justify-center overflow-hidden">
-            <div className="w-full max-w-[1873px] max-h-[calc(950px)] flex justify-start">
+            <div className="w-full max-w-[1286px] max-h-[calc(950px)] flex justify-start">
+            {/* <div className="w-full max-w-[1873px] max-h-[calc(950px)] flex justify-start"> */}
               <RevealWrapper className="w-full max-w-[720px] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] px-10 flex justify-center items-center" reset={false} origin="right">
                 <div className="w-full max-w-[450px] mt-3">
                   <RevealWrapper origin="left" reset={false} delay={250} distance="160px">
@@ -58,7 +59,8 @@ export default function VisionAndMission() {
       <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden">
         <div className="w-full h-[calc(100vh-170px)] min-h-[490px] max-h-[950px]">
           <div className="absolute w-[calc(100%-calc(16px*0))] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] from-transparent to-white bg-gradient-to-br z-20 flex justify-center overflow-hidden">
-            <div className="w-full max-w-[1873px] max-h-[calc(950px)] flex justify-end">
+            <div className="w-full max-w-[1286px] max-h-[calc(950px)] flex justify-end">
+            {/* <div className="w-full max-w-[1873px] max-h-[calc(950px)] flex justify-end"> */}
               <RevealWrapper className="w-full max-w-[720px] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] px-10 flex justify-center items-center" reset={false} origin="right">
                 <div className="w-full max-w-[450px] mt-3">
                   <RevealWrapper origin="left" reset={false} delay={250} distance="160px">

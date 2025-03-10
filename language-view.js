@@ -75,5 +75,21 @@ export default {
   mission_desc_five: {
     id: "5. Membangun institusi Sovereign Wealth Fund yang mandiri dan unggul, dengan tata kelola keuangan yang sehat serta berorientasi pada keberlanjutan jangka panjang.",
     en: "5. Establishing an independent and leading sovereign wealth fund institution, with sound financial governance and a strong focus on long-term sustainability."
+  },
+  page_not_found_title: {
+    id: "Opss!, Halaman tidak ditemukan!",
+    en: "Opss, page not found!"
+  },
+  page_not_found_desc: {
+    id: "Halaman ini tidak tersedia, jika kamu memaksa untuk mengakses, tidak dapat terselesaikan, silahkan balik ke halaman awal",
+    en: "This page is not available, if you force to access, it cannot be resolved, please return to the home page"
+  },
+  page_not_found_button: {
+    id: "Balik ke halaman awal",
+    en: "Back to first page"
+  },
+  no_menu: {
+    id: "Tidak ada menu",
+    en: "Doesn't have a menu"
   }
 }

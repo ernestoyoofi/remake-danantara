@@ -5,8 +5,10 @@ import { HiMenuAlt3, HiOutlineX } from "react-icons/hi"
 import { useLanguage } from "./ContextLanguage"
 import { useEffect, useRef, useState } from "react"
 import languageView from "./LanguageView"
+import { usePathname } from "next/navigation"
 
 export default function Headers() {
+  const path = usePathname()
   const { switchLanguage, language } = useLanguage()
   const displayLang = languageView(language)
   const buttonSwitch = useRef()
@@ -136,10 +138,14 @@ export default function Headers() {
                   <b className="font-bold ml-2">English</b>
                 </div>
               </div>
-              <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("aboutus") }}>{displayLang("aboutus")}</a>
-              <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-warp overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("journey_abouting") }}>{displayLang("journey_abouting")}</a>
-              <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("vision_and_mission") }}>{displayLang("vision_and_mission")}</a>
-              <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("contact_person") }}>{displayLang("contact_person")}</a>
+              {path === "/"?<>
+                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("aboutus") }}>{displayLang("aboutus")}</a>
+                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-warp overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("journey_abouting") }}>{displayLang("journey_abouting")}</a>
+                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("vision_and_mission") }}>{displayLang("vision_and_mission")}</a>
+                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("contact_person") }}>{displayLang("contact_person")}</a>
+              </>:<>
+                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline">{displayLang("no_menu")}</a>
+              </>}
             </div>
           </button>
         </div>
