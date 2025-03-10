@@ -3,6 +3,7 @@
 import { RevealWrapper } from  "next-reveal"
 import languageView from "../components/LanguageView"
 import { useLanguage } from "../components/ContextLanguage"
+import Image from "next/image"
 
 export default function Herosection() {
   const { language } = useLanguage()
@@ -27,11 +28,19 @@ export default function Herosection() {
             </RevealWrapper>
           </div>
         </div>
-        <img
+        <Image
+          alt="Hero children indonesia"
+          className="w-full h-full object-cover"
+          width={1236}
+          height={625}
+          quality={70}
+          src="/optimization/hero-children-indo.webp"
+        />
+        {/* <img
           alt="Hero children indonesia"
           className="w-full h-full object-cover"
           src="/content/hero-children-indo.png"
-        />
+        /> */}
       </div>
     </RevealWrapper>
     <div data-group-element="aboutus"></div>

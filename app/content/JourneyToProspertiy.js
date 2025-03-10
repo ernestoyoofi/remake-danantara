@@ -3,6 +3,7 @@
 import { RevealWrapper } from  "next-reveal"
 import languageView from "../components/LanguageView"
 import { useLanguage } from "../components/ContextLanguage"
+import Image from "next/image"
 
 export default function JourneyToProspertiy() {
   const { language } = useLanguage()
@@ -31,11 +32,19 @@ export default function JourneyToProspertiy() {
               </RevealWrapper>
             </div>
           </div>
-          <img
+          <Image
+            alt="Building flag indonesia"
+            className="w-full h-full object-cover"
+            width={1236}
+            height={625}
+            quality={70}
+            src="/optimization/building-flag-indo.webp"
+          />
+          {/* <img
             alt="Building flag indonesia"
             className="w-full h-full object-cover"
             src="/content/building-flag-indo.png"
-          />
+          /> */}
         </div>
       </div>
     </RevealWrapper>
@@ -46,11 +55,11 @@ export default function JourneyToProspertiy() {
             <img
               alt="Building flag indonesia"
               className="w-full h-full object-cover"
-              src="/content/danantara-building-trademark.png"
+              src="/optimization/danantara-building-trademark.webp"
             />
             <img
               className="absolute w-[calc(100%-calc(16px*2))] max-w-[520px] md:hidden"
-              src="/content/president-prabowo.png"
+              src="/optimization/president-prabowo.webp"
             />
           </div>
           <RevealWrapper className="w-full h-[calc(100vh-350px)] min-h-[490px] max-h-[710px] flex justify-between bg-[rgba(245,245,245,1)] max-md:max-h-max max-md:min-h-min" origin="bottom" reset={false} delay={200}>
@@ -66,7 +75,7 @@ export default function JourneyToProspertiy() {
               <img
                 className="w-[520px] absolute"
                 alt="Building flag indonesia"
-                src="/content/president-prabowo.png"
+                src="/optimization/president-prabowo.webp"
               />
             </div>
           </RevealWrapper>

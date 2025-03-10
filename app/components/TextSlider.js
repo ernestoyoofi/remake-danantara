@@ -12,11 +12,15 @@ export default function TextSlider({ listString }) {
     setCurrentIndex((prev) => (prev === listText.length - 1 ? 0 : prev + 1))
   }
   
-  return <div className="w-full mt-3">
-    <div className="relative flex items-center justify-between w-full mx-auto text-center">
-      <button className="flex items-center justify-center w-[22px] h-[160px] cursor-pointer active:scale-90" onClick={prevSlide}>
-        <HiChevronLeft size={30}/>
-      </button>
+  return <div className="ml-[-11px] w-full mt-3">
+    <div className="relative flex items-center justify-between w-[calc(100%+18px)] mx-auto text-center">
+      <div className="w-[5px] h-[160px]">
+        <button className="group absolute ml-[-17px] flex items-center justify-center w-[30px] h-[160px] cursor-pointer duration-100 z-30" onClick={prevSlide}>
+          <div className="w-[30px] h-[30px] flex items-center justify-center rounded-4xl bg-white mt-[-40px] group-active:scale-90 duration-100 shadow-md">
+            <HiChevronLeft size={30}/>
+          </div>
+        </button>
+      </div>
       <div className="relative overflow-hidden flex-1 mx-4 w-[calc(100%-44px)] h-[160px]">
         <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {listText.map((text, index) => (
@@ -26,9 +30,13 @@ export default function TextSlider({ listString }) {
           ))}
         </div>
       </div>
-      <button className="flex items-center justify-center w-[22px] h-[160px] cursor-pointer active:scale-90" onClick={nextSlide}>
-        <HiChevronRight size={30}/>
-      </button>
+      <div className="w-[5px] h-[160px]">
+        <button className="group absolute mr-[-22px] flex items-center justify-center w-[25px] h-[160px] cursor-pointer duration-100 z-30" onClick={nextSlide}>
+          <div className="w-[30px] h-[30px] flex items-center justify-center rounded-4xl bg-white mt-[-40px] group-active:scale-90 duration-100 shadow-md">
+            <HiChevronRight size={30}/>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 }
