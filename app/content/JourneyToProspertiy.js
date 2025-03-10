@@ -8,18 +8,18 @@ export default function JourneyToProspertiy() {
   const { language } = useLanguage()
   const displayLang = languageView(language)
 
-  return <div>
+  return <div data-group-element="journey_abouting">
     <RevealWrapper origin="bottom" reset={false} distance="260px">
-      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden px-4" data-group-element="journey_abouting">
+      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden">
         <div className="w-full h-[25px] grid grid-cols-3">
           <div className="py-3 flex flex-col bg-black"></div>
           <div className="py-3 flex flex-col bg-red-600"></div>
           <div className="py-3 flex flex-col bg-red-900"></div>
         </div>
         <div className="w-full h-[calc(100vh-170px)] min-h-[490px] max-h-[950px]">
-          <div className="absolute w-[calc(100%-calc(16px*2))] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] from-transparent to-white bg-gradient-to-br z-20 flex justify-center overflow-hidden">
+          <div className="absolute w-[calc(100%-calc(16px*0))] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] from-transparent to-white bg-gradient-to-br z-20 flex justify-center overflow-hidden">
             <div className="w-full max-w-[1873px] max-h-[calc(950px)] flex justify-end">
-              <RevealWrapper className="w-full max-w-[720px] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] px-10 flex justify-center items-center backdrop-blur-xs" reset={false} origin="left">
+              <RevealWrapper className="w-full max-w-[720px] h-[calc(100vh-170px)] min-h-[490px] max-h-[950px] px-10 flex justify-center items-center" reset={false} origin="left">
                 <div className="w-[450px] mt-3">
                   <RevealWrapper origin="left" reset={false} delay={250} distance="160px">
                     <h1 className="text-3xl font-bold">{displayLang("journey_abouting")}</h1>
@@ -40,9 +40,9 @@ export default function JourneyToProspertiy() {
       </div>
     </RevealWrapper>
     <RevealWrapper origin="bottom" reset={false} distance="70px">
-      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden px-4 mt-3 max-w-[1873px] m-auto max-xl:max-w-max max-xl:min-h-min">
-        <div className="w-full h-[calc(100vh-350px)] min-h-[490px] max-h-[710px] flex items-center max-xl:flex-col max-xl:max-w-max max-xl:min-h-min">
-          <div className="w-[520px] max-xl:w-full h-full flex items-end justify-end max-xl:object-bottom max-md:h-[470px]">
+      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden px-5 my-8 max-w-[1873px] m-auto max-xl:max-w-max max-xl:min-h-min">
+        <div className="w-full h-[calc(100vh-350px)] min-h-[490px] max-h-[710px] flex items-center max-xl:flex-col max-xl:max-w-max max-xl:min-h-min rounded-3xl overflow-hidden">
+          <div className="w-[520px] max-xs:h-[370px] max-xl:w-full h-full flex items-end justify-end max-xl:object-bottom max-md:h-[470px]">
             <img
               alt="Building flag indonesia"
               className="w-full h-full object-cover"

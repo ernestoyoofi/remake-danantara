@@ -1,4 +1,5 @@
-module.exports = {
+// module.exports = {
+export default {
   changelanguage: {
     id: "Ubah bahasa",
     en: "Change language"
@@ -42,5 +43,37 @@ module.exports = {
   belief_as_big_as_possible_label: {
     id: <>Pidato <b>Presiden Prabowo Subianto</b> pada Sidang Paripurna MPR RI dalam rangka Pelantikan Presiden dan Wakil Presiden RI Terpilih Periode 2024-2029</>,
     en: <>Remarks of <b>President Prabowo Subianto</b> before the Plenary Session of the People's Consultative Assembly of the Republic of Indonesia on the Occasion of the Inauguration of the President-Elect and Vice President- Elect of 2024-2029 Term of Office</>
+  },
+  vision: {
+    id: "Visi",
+    en: "Vision"
+  },
+  vision_desc: {
+    id: <>Sebagai pengelola investasi terkemuka, di mana BUMN strategis akan menjadi <i>enabler</i> penempatan investasinya, Danantara Indonesia mendorong transformasi ekonomi Indonesia dengan menumbuhkan badan <i>Sovereign Wealth Fund</i> berskala dunia, mendukung pembangunan nasional dan menciptakan kemakmuran bagi seluruh rakyat Indonesia.</>,
+    en: "As a leading investment manager, where strategic State-Owned Enterprises (SOEs) act as enablers for its investment placements, Danantara Indonesia drives Indonesia's economic transformation by fostering a world-class sovereign wealth fund, supporting national development, and creating prosperity for the Nation."
+  },
+  mission_title: {
+    id: "Misi",
+    en: "Mission"
+  },
+  mission_desc_one: {
+    id: "1. Mengelola kekayaan negara secara profesional, transparan, dan berkelanjutan sesuai dengan prinsip good governance untuk mendorong kesejahteraan rakyat, sebagaimana diamanatkan dalam Pasal 33 Ayat 3 UUD 1945 dan misi Asta Cita.",
+    en: "1. Managing national wealth professionally, transparently, and sustainably in line with good governance principles to promote public welfare, as mandated by Article 33, Paragraph 3 of the 1945 Constitution and the Asta Cita mission."
+  },
+  mission_desc_two: {
+    id: "2. Mengoptimalkan dan mengelola aset BUMN untuk menciptakan nilai tambah ekonomi yang signifikan.",
+    en: "2. Optimizing and managing state-owned assets to create significant economic value."
+  },
+  mission_desc_three: {
+    id: "3. Menjadi katalisator pertumbuhan ekonomi nasional melalui investasi strategis di sektor prioritas yang mendorong daya saing global.",
+    en: "3. Acting as a catalyst for national economic growth by investing in key strategic sectors that drives global competitiveness."
+  },
+  mission_desc_four: {
+    id: "4. Menarik dan mengakselerasi investasi domestik maupun internasional dengan membangun kemitraan strategis guna mendukung pembangunan nasional yang inklusif dan berkelanjutan.",
+    en: "4. Attracting and accelerating domestic and international investment through strategic partnerships to support inclusive and sustainable national development."
+  },
+  mission_desc_five: {
+    id: "5. Membangun institusi Sovereign Wealth Fund yang mandiri dan unggul, dengan tata kelola keuangan yang sehat serta berorientasi pada keberlanjutan jangka panjang.",
+    en: "5. Establishing an independent and leading sovereign wealth fund institution, with sound financial governance and a strong focus on long-term sustainability."
   }
 }

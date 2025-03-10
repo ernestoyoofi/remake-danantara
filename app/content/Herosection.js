@@ -10,15 +10,15 @@ export default function Herosection() {
 
   return <div>
     <RevealWrapper origin="bottom" reset={false}>
-      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden px-4">
+      <div className="w-full h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] overflow-hidden">
         <div className="w-full h-[25px] grid grid-cols-3">
           <div className="py-3 flex flex-col bg-black"></div>
           <div className="py-3 flex flex-col bg-red-600"></div>
           <div className="py-3 flex flex-col bg-red-900"></div>
         </div>
-        <div className="absolute w-[calc(100%-calc(16px))] h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] z-20 flex items-end">
-          <div className="w-[calc(100%-calc(16px))] h-[410px] from-white to-transparent bg-gradient-to-t"></div>
-          <div className="absolute w-[calc(100%-calc(16px))] h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] flex justify-center items-center flex-col mb-10 px-4">
+        <div className="absolute w-[calc(100%-calc(16px*0))] h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] z-20 flex items-end">
+          <div className="w-[calc(100%-calc(16px*0))] h-[410px] from-white to-transparent bg-gradient-to-t"></div>
+          <div className="absolute w-[calc(100%-calc(16px*0))] h-[calc(100vh-calc(50px*2))] max-h-[940px] min-h-[420px] flex justify-center items-center flex-col mb-10 px-4">
             <RevealWrapper origin="bottom" reset={false} delay={400}>
               <h1 className="text-[50pt] text-center text-white font-bold font-[bigcaslonFont]">Daya Anagata Nusantara</h1>
             </RevealWrapper>
@@ -34,8 +34,9 @@ export default function Herosection() {
         />
       </div>
     </RevealWrapper>
+    <div data-group-element="aboutus"></div>
     <RevealWrapper origin="bottom" reset={false}>
-      <div className="w-full max-w-7xl m-auto px-10 pt-[120px] pb-[120px] flex items-center md:h-[calc(100vh-170px)] md:min-h-[410px] md:max-h-[940px]" data-group-element="aboutus">
+      <div className="w-full max-w-7xl m-auto px-10 pt-[120px] pb-[120px] flex items-center md:h-[calc(100vh-170px)] md:min-h-[410px] md:max-h-[940px]">
         <div className="w-full">
           <RevealWrapper origin="bottom" reset={false} delay={400}>
             <h1 className="text-5xl font-bold">{displayLang("aboutus")}</h1>

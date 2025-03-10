@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { HiMenuAlt3 } from "react-icons/hi"
+import { HiMenuAlt3, HiOutlineX } from "react-icons/hi"
 import { useLanguage } from "./ContextLanguage"
 import { useEffect, useRef, useState } from "react"
 import languageView from "./LanguageView"
@@ -113,8 +113,8 @@ export default function Headers() {
             </button>
           </div>
           <button className="w-[50px] h-[50px] rounded-md hover:bg-gray-100 duration-300 flex justify-center items-center cursor-pointer relative" ref={buttonSwitch}>
-            <HiMenuAlt3 size={26} inert className="pointer-events-none"/>
-            <div className="absolute right-8 top-8 w-[270px] bg-white rounded-md shadow-md duration-100 origin-top-right border border-gray-200 z-50" style={{ transform: menuHam ? "scale(1)" : "scale(0)" }}>
+            {menuHam? <HiOutlineX size={26} inert className="pointer-events-none"/>:<HiMenuAlt3 size={26} inert className="pointer-events-none"/>}
+            <div className="absolute right-8 top-8 w-[270px] bg-white rounded-md shadow-md duration-200 origin-top-right border border-gray-200 z-50" style={{ transform: menuHam ? "scale(1)" : "scale(0)" }}>
               <b className="block w-full text-left pl-4 pt-3 text-[0.9rem] sm:hidden">{displayLang("changelanguage")}</b>
               <div className="px-4 w-[240px] h-[30px] mt-2 mb-2 overflow-hidden sm:hidden" ref={changelanguageoption}>
                 <div className="flex w-[calc(240px-32px)] h-[30px] justify-start items-center cursor-pointer duration-150" style={{ marginTop: language == "id"? "0px":"-30px" }} onClick={() => { switchingLang("en") }}>

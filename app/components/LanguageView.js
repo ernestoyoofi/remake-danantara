@@ -1,8 +1,12 @@
+import importingLang from "../../language-view"
+
 function LanguageView(lang) {
-  const importing = require("../../language-view")
+  const importing = importingLang
   return (keytig) => {
+//    console.log(importing[keytig], keytig)
     return typeof importing[keytig][lang] == "object"? importing[keytig][lang] : String(importing[keytig][lang] || keytig)
   }
 }
 
-module.exports = LanguageView
+export default LanguageView
+// module.exports = LanguageView
