@@ -42,6 +42,12 @@ export default function Headers() {
 
   const scrollingPage = (e) => {
     const currentScrollY = window.scrollY
+    if(currentScrollY < 140) {
+      if(scrollingAt == "down") {
+        setScrollingAt("up")
+      }
+      return;
+    }
     if(currentScrollY > lastHeight) {
       if(scrollingAt == "up") {
         setScrollingAt("down")
