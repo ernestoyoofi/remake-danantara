@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { IoMailOpenOutline, IoLocationOutline } from "react-icons/io5"
 
 export default function Footer() {
@@ -7,7 +8,10 @@ export default function Footer() {
     <div className="w-full max-w-7xl m-auto">
       <div className="block items-center p-4 px-5 sm:h-[140px] sm:flex">
         <div className="w-full md:w-[250px] mb-3 mt-5 sm:mb-0 sm:mt-0 flex items-center">
-          <img
+          <Image
+            alt="Footer image danantara"
+            width={235}
+            height={51}
             src="/assets/danantara-logo-black-v2.af11886a.png"
           />
         </div>

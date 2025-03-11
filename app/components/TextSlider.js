@@ -15,7 +15,7 @@ export default function TextSlider({ listString }) {
   return <div className="ml-[-11px] w-full mt-3">
     <div className="relative flex items-center justify-between w-[calc(100%+18px)] mx-auto text-center">
       <div className="w-[5px] h-[160px]">
-        <button className="group absolute ml-[-17px] flex items-center justify-center w-[30px] h-[160px] cursor-pointer duration-100 z-30" onClick={prevSlide}>
+        <button className="group absolute ml-[-17px] flex items-center justify-center w-[30px] h-[160px] cursor-pointer duration-100 z-30" onClick={prevSlide} aria-label="Sebelumnya">
           <div className="w-[30px] h-[30px] flex items-center justify-center rounded-4xl bg-white mt-[-40px] group-active:scale-90 duration-100 shadow-md">
             <HiChevronLeft size={30}/>
           </div>
@@ -31,7 +31,7 @@ export default function TextSlider({ listString }) {
         </div>
       </div>
       <div className="w-[5px] h-[160px]">
-        <button className="group absolute mr-[-22px] flex items-center justify-center w-[25px] h-[160px] cursor-pointer duration-100 z-30" onClick={nextSlide}>
+        <button className="group absolute mr-[-22px] flex items-center justify-center w-[25px] h-[160px] cursor-pointer duration-100 z-30" onClick={nextSlide} aria-label="Selanjutnya">
           <div className="w-[30px] h-[30px] flex items-center justify-center rounded-4xl bg-white mt-[-40px] group-active:scale-90 duration-100 shadow-md">
             <HiChevronRight size={30}/>
           </div>

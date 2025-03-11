@@ -61,6 +61,8 @@ export default function JourneyToProspertiy() {
             />
             <img
               className="absolute w-[calc(100%-calc(16px*2))] max-w-[520px] md:hidden"
+              alt="President prabowo"
+              loading="lazy"
               src="/optimization/president-prabowo.webp"
             />
           </div>
@@ -76,7 +78,8 @@ export default function JourneyToProspertiy() {
             <div className="w-[420px] max-xl:w-[220px] h-full flex justify-end items-end max-md:hidden">
               <img
                 className="w-[520px] absolute"
-                alt="Building flag indonesia"
+                alt="President prabowo"
+                loading="lazy"
                 src="/optimization/president-prabowo.webp"
               />
             </div>

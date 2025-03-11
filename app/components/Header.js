@@ -88,8 +88,8 @@ export default function Headers() {
           <Image
             alt="Icon"
             className="w-full h-full object-contain"
-            width={200}
-            height={50}
+            width={188}
+            height={70}
             src={"/assets/danantara-logo-black-v2.af11886a.png"}
           />
         </div>
@@ -139,12 +139,12 @@ export default function Headers() {
                 </div>
               </div>
               {path === "/"?<>
-                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("aboutus") }}>{displayLang("aboutus")}</a>
-                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-warp overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("journey_abouting") }}>{displayLang("journey_abouting")}</a>
-                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("vision_and_mission") }}>{displayLang("vision_and_mission")}</a>
-                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("contact_person") }}>{displayLang("contact_person")}</a>
+                <div className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("aboutus") }}>{displayLang("aboutus")}</div>
+                <div className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-warp overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("journey_abouting") }}>{displayLang("journey_abouting")}</div>
+                <div className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("vision_and_mission") }}>{displayLang("vision_and_mission")}</div>
+                <div className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline" onClick={() => { scrollingToView("contact_person") }}>{displayLang("contact_person")}</div>
               </>:<>
-                <a className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline">{displayLang("no_menu")}</a>
+                <div className="block w-full p-2 px-4 text-[0.9rem] border-gray-100 border-t whitespace-nowrap overflow-ellipsis overflow-hidden hover:underline">{displayLang("no_menu")}</div>
               </>}
             </div>
           </button>
