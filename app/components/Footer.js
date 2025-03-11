@@ -33,7 +33,7 @@ export default function Footer() {
     </div>
     <div className="w-full border-gray-200 border-t">
       <div className="w-full p-3 px-4 max-w-7xl m-auto">
-        <p className="text-sm text-center">{`© 2025 Badan Pengelola Investasi Daya Anagata Nusantara (Danantara Indonesia) - Recreate/remake by `}<a href="https://github.com/ernestoyoofi/remake-danantara" target="_blank" className="text-blue-600 hover:underline">@ernestoyoofi</a>{` with 💖`}</p>
+        <p className="text-sm text-center">{`© 2025 Badan Pengelola Investasi Daya Anagata Nusantara (Danantara Indonesia) - Recreate/remake by `}<a href="https://github.com/ernestoyoofi/remake-danantara" target="_blank" className="text-blue-600 hover:underline">@ernestoyoofi</a>{` with 💖 (sukarela & berbaik hati)`}</p>
       </div>
     </div>
   </footer>

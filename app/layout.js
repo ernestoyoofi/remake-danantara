@@ -4,6 +4,7 @@ import "./globals.css"
 import Root from "./root"
 import Headers from "./components/Header"
 import Footer from "./components/Footer"
+import LabelingInfo from "./components/Labeling"
 
 const jakartaSans = Plus_Jakarta_Sans({
   variable: "--font-jakarta-sans",
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
       <Root>
         <Headers />
         {children}
+        <LabelingInfo />
         <Footer />
       </Root>
     </body>
