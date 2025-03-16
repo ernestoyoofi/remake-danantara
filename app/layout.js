@@ -14,6 +14,18 @@ const bigcaslonFont = localFont({
   variable: "--font-bigcaslon-cc",
   src: "./fonts/Big_Caslon_CC_Black.otf",
 })
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Daya Anagata Nusantara",
+  "url": "https://remake-danantara.vercel.app",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Danantara Indonesia Sentra Mandiri Jl. R.P. Soeroso No.2-4 Jakarta Pusat, 10330, Indonesia",
+    "addressLocality": "Jakarta",
+    "addressCountry": "ID"
+  }
+}
 
 export const metadata = {
   siteName: "Daya Anagata Nusantara - Danantara",
@@ -63,6 +75,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return <html lang="en">
     <body className={`${jakartaSans.variable} ${bigcaslonFont.variable} antialiased overflow-x-hidden`}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Root>
         <Headers />
         {children}
