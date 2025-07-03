@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-notless-bg: var(--background);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter-sans);
+  --font-mono: var(--font-inter-sans);
+  --font-jetbrain: var(--font-jetbrains-mono);
+  --breakpoint-xs: 38rem;
+}
+
+.masking-gradation-top-to-bottom {
+  mask: linear-gradient(black, transparent, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.bgimage-noise-state {
+  background-image: url(/noise.png);
+  background-size: 90px 90px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter-sans);
+}
