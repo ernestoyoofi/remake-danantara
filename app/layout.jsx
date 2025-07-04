@@ -3,6 +3,7 @@ import "./globals.css"
 import RootElement from "./components/Root"
 import Header from "./components/meta/Header"
 import Footer from "./components/meta/Footer"
+import WarningView from "./components/meta/WarningView"
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -79,6 +80,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return <html lang="en">
     <body className={`${interSans.variable} ${interTight.variable} ${jetbrains.variable} ${notoSerif.variable} antialiased overflow-x-hidden`}>
+      <WarningView />
       {/* JsonLD Metadata */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <RootElement>

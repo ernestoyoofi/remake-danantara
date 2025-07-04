@@ -46,7 +46,7 @@ export default function TransparancyHistoryReport() {
     whileInView={keymotion.outani}
     viewport={keymotion.viewportnp}
     transition={keymotion.spring_smooth}
-    className="w-full h-screen max-h-[610px] min-h-[580px] p-6 py-7 flex items-center justify-center select-none"
+    className="w-full h-screen max-h-[610px] min-h-[580px] p-6 py-7 flex items-center justify-center"
   >
     <div className="w-full max-w-4xl">
       <motion.div
