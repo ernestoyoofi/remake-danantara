@@ -83,7 +83,7 @@ export default function VisionAndMission() {
       whileInView={keymotion.outanicase}
       viewport={keymotion.viewportnp}
       transition={keymotion.spring_smooth}
-      className="w-full h-screen min-h-[740px] md:min-h-[450px] flex items-center justify-center"
+      className="w-full h-screen min-h-[800px] md:min-h-[450px] flex items-center justify-center"
     >
       <div className="w-full max-w-4xl z-[2] p-6 py-7">
         <motion.h1

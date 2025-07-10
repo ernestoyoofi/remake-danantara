@@ -48,7 +48,7 @@ export default function AboutDanantara() {
     whileInView={keymotion.outani}
     viewport={keymotion.viewportnp}
     transition={keymotion.spring_smooth}
-    className="w-full h-screen max-h-[840px] min-h-[720px] p-6 py-7 flex items-center justify-center"
+    className="w-full h-full max-sm:py-[30px] sm:h-screen sm:max-h-[880px] sm:min-h-[840px] p-6 py-7 flex items-center justify-center"
   >
     <div className="w-full max-w-4xl">
       <motion.h1

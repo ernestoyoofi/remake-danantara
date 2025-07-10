@@ -32,7 +32,7 @@ export default function WarningView() {
   }, [])
 
   return <div>
-    <div className={"fixed top-0 left-0 w-full h-full bg-black/50 z-[90] backdrop-blur-md bgimage-noise-medium flex justify-center items-center duration-150 "+(showWarning.show? "opacity-100":"opacity-0 pointer-events-none")}>
+    <div className={"fixed top-0 left-0 w-full h-full bg-black/50 z-[90] backdrop-blur-md bgimage-noise-medium flex justify-center items-center duration-150 px-4 "+(showWarning.show? "opacity-100":"opacity-0 pointer-events-none")}>
       <div className={"w-full max-w-md bg-white overflow-hidden rounded-md shadow-md duration-300 "+(showWarning.show? "scale-100 opacity-100":"scale-90 opacity-0")}>
         <div className="w-full p-4.5 px-5">
           <h1 className="text-xl font-semibold">Informasi Penting!</h1>
