@@ -27,13 +27,19 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Daya Anagata Nusantara",
-  "url": "https://remake-danantara.vercel.app",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Danantara Indonesia Sentra Mandiri Jl. R.P. Soeroso No.2-4 Jakarta Pusat, 10330, Indonesia",
-    "addressLocality": "Jakarta",
-    "addressCountry": "ID"
-  }
+  "description": "Lembaga Pengelola Investasi Daya Anagata Nusantara (Danantara) - Mendorong investasi dan transformasi ekonomi Indonesia.",
+  "url": "https://danantaraindonesia.vercel.app",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Daya Anagata Nusantara",
+    "url": "https://danantaraindonesia.vercel.app",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Danantara Indonesia Sentra Mandiri Jl. R.P. Soeroso No.2-4 Jakarta Pusat, 10330, Indonesia",
+      "addressLocality": "Jakarta",
+      "addressCountry": "ID"
+    }
+  },
 }
 
 // METADATA HEAD
@@ -49,19 +55,20 @@ export const metadata = {
   metadataBase: new URL("https://danantaraindonesia.vercel.app"),
   url: "https://danantaraindonesia.vercel.app",
   category: "Badan Pengelola Investasi, BPI, Daya Anagata Nusantara, Danantara, Muliaman Hadad, Badan Investasi".split(",").map(a => a.trim()),
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      "max-video-preview": 1,
-      "max-image-preview": "large",
-      "max-snippet": 1,
-    },
-  },
+  // // ## Remove This Problem About Bot Request
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  //   nocache: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: true,
+  //     noimageindex: false,
+  //     "max-video-preview": 3,
+  //     "max-image-preview": "large",
+  //     "max-snippet": 512,
+  //   },
+  // },
   openGraph: {
     title: "Daya Anagata Nusantara - Danantara",
     images: [
