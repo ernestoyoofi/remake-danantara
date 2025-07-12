@@ -220,7 +220,7 @@ export default function KursBankIndonesia() {
         {loadFirst&&<div className="absolute w-full h-full bg-neutral-400/40 rounded-md flex flex-col items-center justify-center z-20 backdrop-blur-md bgimage-noise-medium">
           <p className="mb-4 text-sm max-w-2xs text-center">Untuk mengurangi performa yang melunjak, maka dari itu untuk menguranginya hanya dapat melewati tombol ini untuk memuat data awal</p>
           <Button onClick={() => { ExampleDataLoad(); setLoadFirst(false) }} className="cursor-pointer">
-            <span>Klik untuk memuat data sample</span>
+            <span className="pointer-events-none">Klik untuk memuat data sample</span>
           </Button>  
         </div>}
         {data?.loading&&<div className="absolute w-full h-[30px] z-10 px-3.5">
@@ -250,7 +250,7 @@ export default function KursBankIndonesia() {
             placeholder="Jenis permintaan data"
           />
           <Button className="cursor-pointer w-full max-sm:mt-2 sm:w-[120px] sm:ml-1.5" onClick={ExampleDataLoad} variant="outline">
-            <span className="text-sm font-semibold">Minta Data</span>
+            <span className="text-sm font-semibold pointer-events-none">Minta Data</span>
           </Button>
         </div>
         <div className="w-full flex flex-wrap justify-between md:mt-2">

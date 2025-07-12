@@ -10,6 +10,7 @@ export default function NotFoundPage() {
           className="w-full h-full object-contain"
           width={410}
           height={347}
+          quality={70}
           alt="Book Not Found"
           src="/assets/book-notfound.webp"
         />

@@ -23,7 +23,7 @@ export function DatePicker({ onChange, placeholder = "Pick a date", className })
           className={cn("data-[empty=true]:text-muted-foreground w-[280px] justify-start text-left font-normal", className)}
         >
           <CalendarIcon />
-          {date ? format(date, "PPP") : <span>{placeholder}</span>}
+          {date ? format(date, "PPP") : <span className="pointer-events-none">{placeholder}</span>}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">

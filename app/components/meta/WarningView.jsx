@@ -7,7 +7,7 @@ export default function WarningView() {
 
   function TriggerAction() {
     let timeOut = null
-    let timeCase = 10
+    let timeCase = 5
     document.querySelector('body').classList.add("hiddenscroll")
     setShowWarning({
       show: true,
@@ -22,7 +22,7 @@ export default function WarningView() {
     }, 1000)
     setTimeout(() => {
       clearInterval(timeOut)
-    }, 1000*10)
+    }, 1000*timeCase)
   }
 
   useEffect(() => {
@@ -30,6 +30,8 @@ export default function WarningView() {
       TriggerAction()
     }, 300)
   }, [])
+
+  return 
 
   return <div>
     <div className={"fixed top-0 left-0 w-full h-full bg-black/50 z-[90] backdrop-blur-md bgimage-noise-medium flex justify-center items-center duration-150 px-4 "+(showWarning.show? "opacity-100":"opacity-0 pointer-events-none")}>

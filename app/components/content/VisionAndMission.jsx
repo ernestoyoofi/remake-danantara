@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion"
-import Image from "next/image";
+import Image from "next/image"
 
 const keymotion = {
   inanicase: {
@@ -57,6 +57,7 @@ export default function VisionAndMission() {
           alt="Gold Indonesia 2045"
           src="/assets/gold-indonesia-2045.webp"
           className="w-full h-full object-cover"
+          quality={70}
           height={800}
           width={1200}
         />

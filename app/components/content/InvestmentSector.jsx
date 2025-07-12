@@ -142,6 +142,7 @@ export default function InvestmentSector() {
                 <Image
                   width={300}
                   height={300}
+                  quality={70}
                   className="w-full h-full object-cover"
                   alt={String(context.list[context.indexReveal]?.name||"")}
                   src={String(context.list[context.indexReveal]?.image||"")}

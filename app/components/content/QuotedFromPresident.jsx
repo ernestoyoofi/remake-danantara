@@ -38,6 +38,7 @@ export default function QuotedFromPresident() {
           alt="Picture Of Prabowo Subianto"
           src="/assets/president-prabowo.png"
           className="w-[420px]"
+          quality={70}
           width={484}
           height={480}
         />
@@ -61,6 +62,7 @@ export default function QuotedFromPresident() {
       <div className="w-full h-full">
         <div className="absolute w-full h-full backdrop-blur-[2px] z-[1] bg-black/50"/>
         <Image
+          quality={70}
           alt="Picture Of Prabowo Subianto"
           src="/assets/danantara-office.webp"
           className="w-full h-full object-cover"
