@@ -98,14 +98,14 @@ export default function Header() {
                 exit={{
                   opacity: 0, filter: "blur(6px)", transform: "scale(0.5) rotate(-45deg)" 
                 }}
-                className="absolute"
+                className="absolute pointer-events-none"
               >
                 {isOpen? <X />:<Menu />}
               </motion.div>
             </AnimatePresence>
           </button>
         </div>
-        <nav className={"max-md:absolute max-md:w-full max-md:rounded-3xl max-md:bg-neutral-100/95 max-md:border max-md:border-neutral-200/70 md:flex items-center justify-end px-4 h-full w-[420px] duration-150 max-md:py-2.5 "+(!isOpen?"max-md:mt-[-90px] max-md:opacity-0 max-md:blur-md max-md:pointer-events-none scale-90":"max-md:mt-[-160px] max-md:opacity-100  max-md:blur-none max-md:pointer-events-auto scale-100")}>
+        <nav className={"max-md:absolute max-md:w-full max-md:rounded-3xl max-md:bg-neutral-100/95 max-md:border max-md:border-neutral-200/70 md:flex items-center justify-end px-4 md:h-full w-[420px] duration-150 max-md:py-2.5 "+(!isOpen?"max-md:mt-[-90px] max-md:opacity-0 max-md:blur-md max-md:pointer-events-none scale-90":"max-md:mt-[-160px] max-md:opacity-100 max-md:blur-none max-md:pointer-events-auto scale-100")}>
           <RouteingLink href="/area-of-investment" className="md:h-full px-2.5 p-2 cursor-pointer text-nowrap font-bold flex items-center">
             <span className="pointer-events-none">Area Investasi</span>
           </RouteingLink>

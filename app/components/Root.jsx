@@ -67,11 +67,13 @@ export default function RootElement({ children }) {
 
   useEffect(() => {
     window.addEventListener("touchmove", DetectedIsUseTouchscreen)
+    window.addEventListener("touchend", DetectedIsUseTouchscreen)
     window.addEventListener("mousemove", DetectedIsUseCursor)
     window.addEventListener("mousedown", DetectedIsUseCursor)
     window.addEventListener("mouseup", DetectedIsUseCursor)
     return () => {
       window.removeEventListener("touchmove", DetectedIsUseTouchscreen)
+      window.removeEventListener("touchend", DetectedIsUseTouchscreen)
       window.removeEventListener("mousemove", DetectedIsUseCursor)
       window.removeEventListener("mousedown", DetectedIsUseCursor)
       window.removeEventListener("mouseup", DetectedIsUseCursor)
