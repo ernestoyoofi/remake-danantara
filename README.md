@@ -1,6 +1,6 @@
 # Danantara Remake Design
 
-Hanya remake design dari [www.danantaraindonesia.com](https://danantara.vercel.app), bukan membuat seutuhnya untuk Danantara.
+Redesign dan refactor website Danantara menggunakan Next.js & Tailwind CSS.
 
 > [!WARNING]
 > Project ini merupakan versi redesign/remake dari [www.danantaraindonesia.com](https://danantara.vercel.app/). semua keseluruhan asset seperti gambar milik dari Danantara bukan dari saya. project ini tidak berafiliasi dengan atau menggantikan situs resmi. semua hak atas konten dan merek dagang tetap menjadi milik pemilik aslinya.
