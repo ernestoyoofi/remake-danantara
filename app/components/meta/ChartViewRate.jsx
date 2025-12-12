@@ -1,12 +1,36 @@
 import { ResponsiveLine } from "@nivo/line"
+import { generateDrinkStats } from "@nivo/generators"
+import { Defs, linearGradientDef } from "@nivo/core"
 import React from "react"
 
 export const dataDefaultColor = {
-  jual: "#8e6bff",
-  beli: "#f09648"
+  jual: "#9700cf",
+  beli: "#1886b5"
+}
+
+function findMinBaseValue(allData) {
+  let minValue = Infinity
+  for(const series of allData) {
+    for(const point of series.data) {
+      const currentValue = point.y
+      if(currentValue < minValue) {
+        minValue = currentValue
+      }
+    }
+  }
+  if(minValue === Infinity) {
+    return 0
+  }
+  const calculatedValue = minValue - 500
+  if(calculatedValue <= 0) {
+    return 0
+  } else {
+    return calculatedValue
+  }
 }
 
 export default function ChartViewRate({ data = [] }) {
+  
   return <ResponsiveLine
     data={data}
     enableGridX={false}
@@ -15,6 +39,7 @@ export default function ChartViewRate({ data = [] }) {
     yScale={{
       type: "linear",
       min: 0,
+      min: findMinBaseValue(data),
       max: "auto",
       stacked: false,
       reverse: false
@@ -26,7 +51,7 @@ export default function ChartViewRate({ data = [] }) {
     axisLeft={{
       tickSize: 2,
       tickPadding: 8,
-      legend: "Harga",
+      legend: "Rupiah (Rp)",
       legendOffset: -62
     }}
     colors={({ id }) => {
@@ -37,7 +62,7 @@ export default function ChartViewRate({ data = [] }) {
       if(itemName.match("jual")) {
         return dataDefaultColor.jual
       }
-      return "#4f4f4f"
+      return "#005082"
     }}
     pointSize={8}
     theme={{
@@ -52,10 +77,19 @@ export default function ChartViewRate({ data = [] }) {
     pointBorderColor={{ from: "serieColor" }}
     pointLabelYOffset={-12}
     useMesh={true}
+    enableArea={true}
+    areaOpacity={0.1}
     enableSlices="x"
+    defs={[
+      linearGradientDef("gradient_line", [
+        { offset: 0, color: "inherit" },
+        { offset: 10, color: "inherit", opacity: 0 },
+      ])
+    ]}
+    fill={[{ match: "*", id: "gradient_line" }]}
     sliceTooltip={({ slice }) => {
-      return <div className="w-[180px] bg-gray-50 shadow-md rounded-md overflow-hidden" key={slice.id}>
-        <div className="w-full p-2 px-3 bg-amber-400 text-white">
+      return <div className="w-[180px] bg-gray-50 shadow-md shadow-neutral-500/50 rounded-sm overflow-hidden" key={slice.id}>
+        <div className="w-full p-2 px-3 bg-blue-600 text-white">
           <b>{`Waktu ${new Date(slice.points[0].data.x).toLocaleString("id-ID", {
             year: "numeric",
             month: "numeric",

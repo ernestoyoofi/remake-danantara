@@ -44,7 +44,7 @@ function MotionReactParagraph({ text }) {
 }
 
 export default function VisionAndMission() {
-  return <div className="w-full overflow-hidden">
+  return <div className="w-full overflow-hidden bg-white">
     <motion.div
       initial={keymotion.inanicase}
       whileInView={keymotion.outanicase}

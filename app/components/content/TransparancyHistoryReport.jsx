@@ -24,7 +24,21 @@ const keymotion = {
 }
 
 const listReport = [
-  { title: "(!Bkn Resmi Dari Danantara) NOTA KEUANGAN APBN TA 2025", link: "https://anggaran.kemenkeu.go.id/assets/FTPPortal/Peraturan/NK%20UU%20APBN%20Lapsem/NOTA%20KEUANGAN%20APBN%20TA%202025.pdf" }
+  { 
+    title: "NOTA KEUANGAN APBN TA 2025", 
+    link: "https://anggaran.kemenkeu.go.id/assets/FTPPortal/Peraturan/NK%20UU%20APBN%20Lapsem/NOTA%20KEUANGAN%20APBN%20TA%202025.pdf",
+    offical: false
+  },
+  { 
+    title: "20250307 3032", 
+    link: "https://ppiddjkn.kemenkeu.go.id/storage/20250307-3032.pdf",
+    offical: false
+  },
+  { 
+    title: "Danantara dan SDF", 
+    link: "https://www.amerta.or.id/wp-content/uploads/2025/05/Danantara-dan-SDF.pdf",
+    offical: false
+  },
 ]
 
 function CardOfReporting({ title, link }) {
@@ -46,7 +60,7 @@ export default function TransparancyHistoryReport() {
     whileInView={keymotion.outani}
     viewport={keymotion.viewportnp}
     transition={keymotion.spring_smooth}
-    className="w-full h-screen max-h-[610px] min-h-[580px] p-6 py-7 flex items-center justify-center"
+    className="bg-white w-full h-screen max-h-[610px] min-h-[580px] p-6 py-7 flex items-center justify-center"
   >
     <div className="w-full max-w-4xl">
       <motion.div
@@ -78,7 +92,7 @@ export default function TransparancyHistoryReport() {
               title={item.title}
             />
           ))}
-          <p className="text-sm mt-2.5 text-neutral-400 text-center">Untuk saat ini belum ada data resmi, jadi tidak dapat memberikan data valid</p>
+          <p className="text-sm mt-2.5 text-neutral-400 text-center italic">Untuk saat ini belum ada data resmi, jadi tidak dapat memberikan data valid</p>
         </motion.div>
       </motion.div>
     </div>

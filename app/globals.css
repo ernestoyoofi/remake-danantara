@@ -83,8 +83,9 @@
   animation: none !important;
 }
 
-body {
+html, body {
   font-family: var(--font-inter-sans);
+  /* background-color: black; */
 }
 
 :root {
@@ -169,6 +170,6 @@ body {
   overflow: hidden;
 }
 
-* {
+/* * {
   cursor: none;
-}
+} */

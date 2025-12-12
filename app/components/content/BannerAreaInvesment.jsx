@@ -35,13 +35,13 @@ export default function BannerAreaInvesment() {
     initial={keymotion.inani}
     animate={keymotion.outani}
     transition={{ duration: 0.6, ease: "circIn" }}
-    className="w-full h-screen min-h-[540px] overflow-hidden flex justify-center items-end"
+    className="w-full h-screen min-h-[540px] overflow-hidden flex justify-center items-end select-none"
     ref={refBox}
   >
     <div className="absolute bottom-[110px] z-[6]">
-      <button className="p-2 px-4 border border-neutral-200 rounded-2xl flex items-center text-white">
-        <span className="mr-2">Gulir untuk melihat kontennya</span>
-        <Mouse size={16}/>
+      <button className="p-2 px-4 shadow-md bg-white rounded-md flex items-center select-none text-black">
+        <span className="mr-2 pointer-events-none">Gulir untuk melihat kontennya</span>
+        <Mouse size={16} className="pointer-events-none"/>
       </button>
     </div>
     <div className="absolute w-full h-[60%] z-[3] from-white to-transparent bg-gradient-to-t" style={{ marginTop: 2 }}/>
@@ -55,7 +55,7 @@ export default function BannerAreaInvesment() {
       </motion.div>
     </div>
     <div className="w-full h-full">
-      <div className="absolute w-full h-full bg-black/30 z-0"></div>
+      <div className="absolute w-full h-full bg-black/30 backdrop-blur-xs z-0"></div>
       <Image
         alt="Independence Day!"
         className="w-full h-full object-cover"

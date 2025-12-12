@@ -179,7 +179,7 @@ export default function KursBankIndonesia() {
     whileInView={keymotion.outani}
     viewport={keymotion.viewport}
     transition={keymotion.spring_smooth}
-    className="w-full overflow-hidden py-[100px]"
+    className="bg-white w-full overflow-hidden py-[100px]"
   >
     <div className="w-full max-w-4xl m-auto">
       <div className="w-full px-3.5">
@@ -253,7 +253,7 @@ export default function KursBankIndonesia() {
             <span className="text-sm font-semibold pointer-events-none">Minta Data</span>
           </Button>
         </div>
-        <div className="w-full flex flex-wrap justify-between md:mt-2">
+        {!typeExample && <div className="w-full flex flex-wrap justify-between md:mt-2">
           <div className="w-full max-sm:mt-2 md:w-[calc(calc(100%/3)_-_0.25rem)]">
             <SelectMenu
               className="w-full"
@@ -289,7 +289,7 @@ export default function KursBankIndonesia() {
               }}
             />
           </div>
-        </div>
+        </div>}
       </div>}
       <div className="w-full p-2 px-4.5">
         <p className="text-sm">Data dari <a className="text-blue-500 underline" target="_blank" href="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/Default.aspx">Bank Indonesia</a></p>

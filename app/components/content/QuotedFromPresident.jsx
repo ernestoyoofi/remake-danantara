@@ -24,7 +24,7 @@ const keymotion = {
 }
 
 export default function QuotedFromPresident() {
-  return <div className="w-full overflow-hidden flex justify-center items-center py-[40px] px-6 select-none">
+  return <div className="w-full overflow-hidden flex justify-center items-center py-[40px] px-6 select-none bg-white">
     <motion.div
       initial={keymotion.inani}
       whileInView={keymotion.outani}

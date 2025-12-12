@@ -108,7 +108,7 @@ export default function InvestmentSector() {
     }
   }, [scrollView, limitLayer, dataList.length, context.indexReveal])
 
-  return <div className="w-full" style={{
+  return <div className="w-full bg-white" style={{
     height: height+(limitLayer*dataList.length)
   }} ref={refrensBox}>
     <div className="sticky top-0 w-full h-screen max-w-4xl m-auto flex justify-center items-center">

@@ -23,7 +23,7 @@ export default function RootElement({ children }) {
     })
   }
   function DetectedIsUseCursor(e) {
-    console.log(e)
+    // console.log(e)
     const mouseX = e.clientX
     const mouseY = e.clientY
     const nodeDom = String(e.target.tagName||"").toLowerCase()
@@ -84,7 +84,7 @@ export default function RootElement({ children }) {
     <ReactLenis root/> 
     <Toaster theme="light"/>
     <>
-      <div
+      {/* <div
         className={
           "fixed z-[100] select-none pointer-events-none duration-150 "+
           (cursorDiv.hovering?"bg-neutral-400/50":"bg-neutral-300/50")
@@ -98,7 +98,7 @@ export default function RootElement({ children }) {
           left: cursorDiv.attribute?.y||0,
           scale: cursorDiv.attribute?.s||1,
         }}
-      />
+      /> */}
       {children}
     </>
   </ViewTransitions>

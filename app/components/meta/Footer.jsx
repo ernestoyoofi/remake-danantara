@@ -1,9 +1,15 @@
 "use client";
+
 import { MailIcon, MapPin } from "lucide-react"
 import Image from "next/image"
+import { useEffect } from "react"
 
 export default function Footer() {
-  return <footer className="w-full h-[480px] md:h-[360px] bg-neutral-50 pt-5">
+  useEffect(() => {
+
+  }, [])
+
+  return <footer className="w-full h-[480px] md:h-[360px] bg-neutral-200 pt-5">
     <div className="w-full max-w-4xl m-auto flex flex-wrap p-4 px-4.5">
       <div className="w-[160px] py-2">
         <Image
@@ -30,8 +36,8 @@ export default function Footer() {
         </a>
       </div>
     </div>
-    <div className="w-full border-t border-neutral-100 text-center p-4 px-4.5">
-      <span> Recreate/remake by <a className="text-blue-500 hover:underline cursor-pointer" href="https://github.com/ernestoyoofi" target="_blank">@ernestoyoofi</a> with 💖 (sukarela, berbaik hati dan <i className="text-gray-500 underline">dibangun tanpa duit rakyat</i>)</span>
+    <div className="w-full border-t border-neutral-300 text-center p-4 px-4.5">
+      <span> Recreate/remake by <a className="text-blue-500 hover:underline cursor-pointer" href="https://github.com/ernestoyoofi" target="_blank">@ernestoyoofi</a> with 💖 (sukarela, berbaik hati dan <i className="text-gray-800 underline">dibangun tanpa duit rakyat</i>)</span>
     </div>
   </footer>
 }

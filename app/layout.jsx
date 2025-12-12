@@ -8,18 +8,22 @@ import WarningView from "./components/meta/WarningView"
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
+  preload: true
 })
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
   subsets: ["latin"],
+  preload: true
 })
 const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrain",
   subsets: ["latin"],
+  preload: true
 })
 const notoSerif = Noto_Serif({
   variable: "--font-noto-serif",
   subsets: ["latin"],
+  preload: true
 })
 
 // META DATA JSONLD@
@@ -55,20 +59,6 @@ export const metadata = {
   metadataBase: new URL("https://danantaraindonesia.vercel.app"),
   url: "https://danantaraindonesia.vercel.app",
   category: "Badan Pengelola Investasi, BPI, Daya Anagata Nusantara, Danantara, Muliaman Hadad, Badan Investasi".split(",").map(a => a.trim()),
-  // // ## Remove This Problem About Bot Request
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   nocache: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     noimageindex: false,
-  //     "max-video-preview": 3,
-  //     "max-image-preview": "large",
-  //     "max-snippet": 512,
-  //   },
-  // },
   openGraph: {
     title: "Daya Anagata Nusantara - Danantara",
     images: [
