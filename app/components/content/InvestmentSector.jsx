@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import Image from "next/image"
+import Image from "../ui/ImagePreload"
 
 const dataList = [
   {

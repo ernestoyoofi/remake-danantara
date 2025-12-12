@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"
+import Image from "../ui/ImagePreload"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { Mouse } from "lucide-react"

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"
+import Image from "../ui/ImagePreload"
 import { motion } from "framer-motion"
 
 const keymotion = {

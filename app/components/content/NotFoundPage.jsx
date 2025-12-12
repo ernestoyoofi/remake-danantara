@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"
+import Image from "../ui/ImagePreload"
 import Link from "next/link"
 
 export default function NotFoundPage() {
